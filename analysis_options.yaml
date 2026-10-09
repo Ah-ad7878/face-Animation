@@ -1,0 +1,23 @@
+# This file configures the analyzer, which statically analyzes Dart code to
+# check for errors, warnings, and lints.
+
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - web/**
+
+linter:
+  rules:
+    # Const-related rules to force auto-const insertion
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - unnecessary_const
+
+    # Additional helpful Flutter coding rules
+    - avoid_print
+    - prefer_single_quotes
